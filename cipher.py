@@ -1,5 +1,5 @@
 key = 1
-text = 'Hello World'
+text = 'Hello world'
 encrypted_text = ""
 table = []
 print(ord(' '))

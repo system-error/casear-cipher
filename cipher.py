@@ -25,9 +25,3 @@ for char in text:
     
 
 print(encrypted_text)
-
-
-
-# new_position = ((ord(letter) - ord('a') + key) % 26) + ord('a')
-#         new_ch = chr(new_position)
-#         ciphertext += new_ch

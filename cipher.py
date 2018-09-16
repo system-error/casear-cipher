@@ -10,7 +10,7 @@ def encryption(text,key=0):
                 aplphabet = ((ord(char) - ord('A') - key) % 26) + ord('A')
                 newletter = chr(aplphabet)
                 encrypted_text += "".join(newletter)            
-        elif char == ' ':    
+        elif char == ' ':
             encrypted_text += "".join(char)
     return encrypted_text
 
@@ -26,7 +26,7 @@ def decryption(text,key=0):
                 aplphabet = ((ord(char) - ord('A') + key) % 26) + ord('A')
                 newletter = chr(aplphabet)
                 decrypted_text += "".join(newletter)            
-        elif char == ' ':    
+        elif char == ' ':
             decrypted_text += "".join(char)
     return decrypted_text
 

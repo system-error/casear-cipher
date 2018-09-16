@@ -7,14 +7,14 @@ for char in text:
     if char.isalpha():
         if char.islower():
             chaar = ord(char)
-            aplphabet = ((ord(char) - ord('a') + key) % 26) + ord('a')
+            aplphabet = ((ord(char) - ord('a') - key) % 26) + ord('a')
             # if aplphabet > ord('z'):
             #     aplphabet -= 26
             newletter = chr(aplphabet)
             encrypted_text += "".join(newletter)
         else:
             chaar = ord(char)
-            aplphabet = ((ord(char) - ord('A') + key) % 26) + ord('A')
+            aplphabet = ((ord(char) - ord('A') - key) % 26) + ord('A')
             # if aplphabet > ord('z'):
             #     aplphabet -= 26
             newletter = chr(aplphabet)

@@ -29,7 +29,7 @@ def decryption(text,key=0):
                 chaar = ord(char)
                 aplphabet = ((ord(char) - ord('a') + key) % 26) + ord('a')
             # if aplphabet > ord('z'):
-            #     aplphabet -= 26
+            #    aplphabet -= 26
                 newletter = chr(aplphabet)
                 decrypted_text += "".join(newletter)
             else:
